@@ -1,0 +1,30 @@
+/* goals:
+1. grid is multi-columned on larger screens
+2. but single-column on small screens
+3. grid always fills up 100% of available width
+ */
+
+h1, h2, h3 {
+  font-family: sans-serif;
+}
+
+#icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.icon {
+  background-color: lightblue;
+}
+
+@media (max-width: 700px) {
+  .icon {
+    flex: 100%;
+  }
+}
